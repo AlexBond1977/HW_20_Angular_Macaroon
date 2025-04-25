@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'HW_20_Angular_Macaroon'`, () => {
+  it(`should have as title 'kr20'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('HW_20_Angular_Macaroon');
+    expect(app.title).toEqual('kr20');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('HW_20_Angular_Macaroon app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('kr20 app is running!');
   });
 });
